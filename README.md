@@ -33,7 +33,7 @@ Make sure you use a pip version <= 23.0.1. Otherwise the installation of detectr
 
 ## 2. Preprocessing
 
-To modify the images upload the original set of images (we used the dataset from the [AICrowd Food Recognition Competition](https://www.aicrowd.com/challenges/food-recognition-benchmark-2022)) to `/home/user/otrf-training/data/images/` and the `annotations.json` file to the `/home/user/otrf-training/data/annotations.json` folder on your VM. You can change the paths in `settings_preprocessing.py`.
+To modify the images upload the original set of images (we used the dataset from the [AICrowd Food Recognition Competition](https://www.aicrowd.com/challenges/food-recognition-benchmark-2022)) to `/home/user/on-the-right-food-training/data/images/` and the `annotations.json` file to the `/home/user/on-the-right-food-training/data/annotations.json` folder on your VM. You can change the paths in `settings_preprocessing.py`.
 
 1. `bboxcorrection.py` checks and corrects whether bounding boxes around annotated images are fitting the segmentation boundaries.
 
@@ -50,7 +50,7 @@ To modify the images upload the original set of images (we used the dataset from
 
 1. Run `trainer_gcp.py`.
     
-    When the training is completed you can find the prediction model file `model_final.pth` in the `/home/user/otrf-training/output/` folder.
+    When the training is completed you can find the prediction model file `model_final.pth` in the `/home/user/on-the-right-food-training/output/` folder.
 
     If you want to add a timestamp to your model name, uncomment the `TIMESTAMP` block in `trainer_gcp-py`.
 
