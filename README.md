@@ -1,4 +1,4 @@
-# otrf-training
+# On The Right Food - Training
 
 The goal of this repository is to create a prediction model using a subset of preprocessed images described by the `annotations.json` file.
 
